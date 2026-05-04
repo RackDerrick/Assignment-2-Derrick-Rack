@@ -1,0 +1,130 @@
+/* General body styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #222;
+}
+
+/* Sticky header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1a1a2e;
+  color: #fff;
+  padding: 16px 32px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+/* Navigation menu */
+nav {
+  background-color: #16213e;
+  padding: 10px 32px;
+  display: flex;
+  gap: 24px;
+}
+
+header nav {
+  background-color: transparent;
+  padding: 8px 0 0 0;
+}
+
+nav a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 0.95rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+nav a:hover {
+  background-color: #0f3460;
+  color: #fff;
+}
+
+/* Centered main content */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  margin: 100px auto 40px auto;
+  padding: 32px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+main h2 {
+  margin-top: 24px;
+  margin-bottom: 8px;
+  color: #1a1a2e;
+  align-self: flex-start;
+}
+
+main p, main ul, main address {
+  align-self: flex-start;
+  width: 100%;
+}
+
+main ul {
+  padding-left: 20px;
+  margin-bottom: 12px;
+}
+
+main ul li {
+  margin-bottom: 6px;
+}
+
+main img {
+  margin-top: 16px;
+  border-radius: 6px;
+  width: 250px;
+  max-width: 100%;
+}
+
+main a {
+  color: #0f3460;
+}
+
+main a:hover {
+  text-decoration: underline;
+}
+
+address {
+  font-style: normal;
+  line-height: 1.8;
+}
+
+hr {
+  width: 100%;
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 16px 0;
+}
+
+/* Footer */
+footer {
+  background-color: #1a1a2e;
+  color: #e0e0e0;
+  text-align: center;
+  padding: 16px 32px;
+  font-size: 0.875rem;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.4);
+}
